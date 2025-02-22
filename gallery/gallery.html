@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">home /</a>
+            <a href="../posts/posts.html">posts /</a>
+            <a href="../gallery/gallery.html">gallery</a>
+            <a href="../about/about.html">about</a>
+        </nav>
+    </header>
+    <div class="gallery-container">
+        <h1>My Image Gallery</h1>
+        
+        <div class="gallery" id="image-gallery">
+            <!-- Images will be added here dynamically -->
+        </div>
+    </div>
+    
+    <script>
+        const gallery = document.getElementById('image-gallery');
+        const imageFiles = [
+        '7F549136-91EB-491A-8EBC-FEF43E3B7E0D.JPEG',
+            '8F1C4982-3A11-4F21-BE45-7C37A3844DC1.jpg',
+            'cpm35 2024-02-29 145420.024.JPG',
+            'cpm35 2024-04-14 205041.504.JPG',
+            'cpm35 2024-04-14 205042.431.JPG',
+            'cpm35 2024-04-14 212925.350.JPG',
+            'cpm35 2024-04-26 132755.170.JPG',
+            'cpm35 2024-06-06 203004.569.JPG',
+            'cpm35 2025-02-08 212655.335.jpg',
+            'cpm35 2025-02-08 233817.239.jpg',
+            'IMG_0053.jpeg',
+            'IMG_0055.jpeg',
+            'IMG_0200.jpeg',
+            'IMG_1929.jpeg',
+            'IMG_2117.JPG',
+            'IMG_2118.JPG',
+            'IMG_2119.JPG',
+            'IMG_2170.jpeg',
+            'IMG_2215.JPG',
+            'IMG_2237.jpeg',
+            'IMG_2320.jpeg',
+            'IMG_2361.jpeg',
+            'IMG_2376.jpeg',
+            'IMG_2430.jpeg',
+            'IMG_2560.jpeg',
+            'IMG_2604.jpeg',
+            'IMG_2722.jpeg',
+            'IMG_2859.jpeg',
+            'IMG_2868.jpeg',
+            'IMG_2900.jpeg',
+            'IMG_2907.jpeg',
+            'IMG_2998.jpeg',
+            'IMG_3059.jpeg',
+            'IMG_3080.jpeg',
+            'IMG_3560.jpeg',
+            'IMG_3686.jpeg',
+            'IMG_3695.jpeg',
+            'IMG_3738.jpeg',
+            'IMG_3743.jpeg',
+            'IMG_3839.jpeg',
+            'IMG_3940.jpg',
+            'IMG_4449.jpeg',
+            'IMG_4953.jpeg',
+            'IMG_4962.jpeg',
+            'IMG_5099.jpeg',
+            'IMG_5133.jpeg',
+            'IMG_5305.jpeg',
+            'IMG_5309.jpeg',
+            'IMG_5312.jpeg',
+            'IMG_5439.jpeg',
+            'IMG_5740.jpeg',
+            'IMG_5890.JPG',
+            'IMG_6590.JPG',
+            'IMG_6624.jpeg',
+            'IMG_6959.jpeg',
+            'IMG_7225.jpeg',
+            'IMG_7379.jpeg',
+            'IMG_7482.jpeg',
+            'IMG_7505.jpeg',
+            'IMG_7601.jpeg',
+            'IMG_7755.jpeg',
+            'IMG_7953.jpeg',
+            'IMG_8419.jpeg',
+            'IMG_8732.jpeg',
+            'IMG_8910.jpeg',
+            'IMG_9492.jpeg',
+            'IMG_9497.jpeg',
+            'IMG_9662.jpeg',
+            'IMG_9729.jpeg',
+            'IMG_9819.jpeg',
+            'IMG_9862.jpeg',
+            'IMG_9962.jpeg',
+            'IMG_9965.jpeg',
+            'IMG_9978.jpeg',
+            'IMG_20240530_0001.jpeg',
+            'IMG_20240530_0004.jpeg',
+            'IMG_20240530_0007.jpeg',
+            'IMG_20240530_0009.jpeg',
+            'IMG_20240530_0010.jpeg',
+            'IMG_20240530_0011.jpeg',
+            'IMG_20240630_0001.jpeg',
+            'IMG_20241109_0001.jpeg',
+            'IMG_20241109_0002.jpeg',
+            'IMG_20241109_0003.jpeg',
+            'IMG_20241109_0005.jpeg',
+            'IMG_20241109_0006.jpeg',
+            'IMG_20241109_0006(1).jpeg',,
+            'IMG_20241109_0008.jpeg',
+            'IMG_20241109_0010(1).jpeg',
+            'IMG_20241109_0011.jpeg',
+            'IMG_20241109_0012.jpeg',
+            'IMG_20241109_0013(1).jpeg',
+            'IMG_20241121_0001.jpeg',
+            'IMG_20241201_0001.jpeg'
+        ];
+        
+        // Generate the gallery items
+        imageFiles.forEach((filename, index) => {
+            const item = document.createElement('div');
+            item.className = 'gallery-item';
+            
+            const img = document.createElement('img');
+            img.src = `../img/${filename}`;
+            img.alt = `Image ${index + 1}`;
+            img.dataset.index = index;
+            img.loading = 'smooth'; // Enable smooth loading
+            
+            item.appendChild(img);
+            gallery.appendChild(item);
+        });
+    </script>
+</body>
+</html>

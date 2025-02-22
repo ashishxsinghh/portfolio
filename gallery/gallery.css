@@ -1,0 +1,122 @@
+.space-mono-regular {
+    font-family: "Space Mono", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.space-mono-bold {
+    font-family: "Space Mono", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.space-mono-regular-italic {
+    font-family: "Space Mono", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.space-mono-bold-italic {
+    font-family: "Space Mono", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+    font-family: 'Space Mono', monospace;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 2em;
+    padding-top: 4em;
+    padding-left: 5em;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1em 10em 1em 0; 
+    margin: 0;
+}
+
+header a {
+    color: #7460E0;
+    text-decoration: none;
+    margin: 0 0.25em; /* Reduced space between links */
+    font-size: 1em;
+    font-weight: bold;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Space Mono';
+    font-weight: 700;
+    font-size: 15px;
+    margin: 0;
+}
+
+header a:hover {
+    color: #ff6347; /* Adjust hover color as needed */
+}
+
+/* Container for the gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Individual gallery items */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image inside the gallery item */
+.gallery-item img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensure images maintain their aspect ratio */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for the gallery item */
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect for the image inside the gallery item */
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Glow effect on hover */
+.gallery-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(116, 96, 224, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover::before {
+    opacity: 1;
+}
+

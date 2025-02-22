@@ -1,0 +1,118 @@
+.space-mono-regular {
+  font-family: "Space Mono", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: black;
+  color: white;
+  font-family: 'Space Mono', monospace;
+  font-weight: 300;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 2em;
+  padding-top: 4em;
+  padding-left: 5em;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 1em;
+    font-size: 14px;
+  }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1em 10em 1em 0; 
+  margin: 0;
+}
+
+header a {
+  color: #7460E0;
+  text-decoration: none;
+  margin: 0 0.25em; /* Reduced space between links */
+  font-size: 1em;
+  font-weight: bold;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: 15px;
+  margin: 0;
+}
+header a:hover {
+  color: #ff6347; /* Adjust hover color as needed */
+}
+
+.project a {
+  margin-top: 2em;
+  font-size: 0.8em;
+  text-decoration: underline;
+  text-decoration-thickness: 0.2px;
+  text-decoration-color: #ffffff;
+  text-decoration-style: solid;
+  text-underline-offset: 3px;
+  padding-right: 2px;
+  color: white; 
+}
+
+.project a:hover {
+  transition: 0.2s;
+  color: #7460E0;
+}
+
+.content {
+  padding: 2em;
+}
+
+.projects-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.project {
+  margin-bottom: 2em;
+}
+
+.project h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.project p {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+}
+
+.read-more {
+  color: #7460E0;
+  text-decoration: none;
+  font-weight: bold;
+}

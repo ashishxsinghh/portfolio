@@ -1,0 +1,99 @@
+.space-mono-regular {
+    font-family: "Space Mono", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .space-mono-bold {
+    font-family: "Space Mono", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .space-mono-regular-italic {
+    font-family: "Space Mono", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .space-mono-bold-italic {
+    font-family: "Space Mono", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+    font-family: 'Space Mono', monospace;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 2em;
+    padding-top: 4em;
+    padding-left: 5em;
+  }
+
+  @media screen and (max-width: 768px) {
+    body {
+      padding: 1em;
+      font-size: 14px;
+    }
+  }
+  .pfp {
+    border-radius: 50%;
+    box-shadow: #7460E0 0px 0px 31px;
+    width: 50px;
+    height: 50px;
+    border-color: #7460E0;
+}
+  .links-ashish {
+    margin-top: 2em;
+    font-size: 0.8em;;
+    text-decoration: underline;
+    text-decoration-thickness: 0.2px;
+    text-decoration-color: #ffffff;
+    text-decoration-style: solid;
+    text-underline-offset: 3px;
+    padding-right: 2px;
+    color: white; 
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1em 10em 1em 0; 
+    margin: 0;
+  }
+  header a {
+    color: #7460E0;
+    text-decoration: none;
+    margin: 0 0.25em; /* Reduced space between links */
+    font-size: 1em;
+    font-weight: bold;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Space Mono';
+    font-weight: 700;
+    font-size: 15px;
+    margin: 0;
+  }
+  header a:hover {
+    color: #ff6347; /* Adjust hover color as needed */
+  }
+  footer a:hover {
+    color: #7460E0; /* Change this to your desired hover color */
+  }
+
+.about {
+    width: 100%;
+    padding: 0em 19em 0em 0; /* Match the padding of the header */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
