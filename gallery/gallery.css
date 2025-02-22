@@ -55,7 +55,7 @@ header a {
     font-weight: bold;
     display: inline-block;
     overflow-wrap: break-word;
-    font-family: 'Space Mono';
+    font-family: 'Space Mono', monospace;
     font-weight: 700;
     font-size: 15px;
     margin: 0;
